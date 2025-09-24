@@ -25,7 +25,6 @@ namespace CollectionsAndLoops_25
         */
         public static List<int> CollectNumbersToList(int count)
         {
-            // TODO: Create a new List<int>(); loop count times; ReadInt each time; Add to list; return it.
             throw new NotImplementedException("Implement collecting integers to a List<int> using the linked examples.");
         }
 
@@ -35,11 +34,13 @@ namespace CollectionsAndLoops_25
          Goal:
            - Print each number on its own line, in order.
            - Use foreach over IEnumerable<int>.
+         Links:
+           Foreach-loop: https://github.com/xamk-ture/FundamentalsExamples/blob/master/ForeachExample/Program.cs
          ============================================================================
         */
         public static void PrintList(IEnumerable<int> numbers)
         {
-            // TODO: foreach (var n in numbers) Console.WriteLine(n);
+            // TODO:
         }
 
         /// <summary>
@@ -50,14 +51,13 @@ namespace CollectionsAndLoops_25
         ///   - Return 0.0 for an empty list to avoid division by zero.
         /// Constraints:
         ///   - Do NOT use LINQ (Average/Min/Max).
+        /// Links:
+        ///   For-loop sum example: https://github.com/xamk-ture/FundamentalsExamples/blob/master/ForExample/Program.cs
         /// ============================================================================
         /// </summary>
         public static double CalculateAverage(List<int> numbers)
         {
             // TODO:
-            // if (numbers == null || numbers.Count == 0) return 0.0;
-            // long sum = 0; for (int i = 0; i < numbers.Count; i++) sum += numbers[i];
-            // return (double)sum / numbers.Count;
             throw new NotImplementedException("Sum with for-loop and divide by Count; handle empty list.");
         }
 
@@ -68,14 +68,13 @@ namespace CollectionsAndLoops_25
            - Read the list once and track current min and max using comparisons.
          Constraints:
            - If the list is empty, set min=0 and max=0.
+         Links:
+           Min/Max logic example: https://github.com/xamk-ture/FundamentalsExamples/blob/master/MinMaxExample/Program.cs
          ============================================================================
         */
         public static void FindMinAndMax(List<int> numbers, out int min, out int max)
         {
             // TODO:
-            // if (numbers == null || numbers.Count == 0) { min = 0; max = 0; return; }
-            // min = numbers[0]; max = numbers[0];
-            // for (int i = 1; i < numbers.Count; i++) { if (numbers[i] < min) min = numbers[i]; if (numbers[i] > max) max = numbers[i]; }
             throw new NotImplementedException("Walk the list once and track current min and max.");
         }
 
@@ -86,14 +85,13 @@ namespace CollectionsAndLoops_25
         ///   - Build and return a NEW List<int> containing items strictly greater than 'threshold'.
         /// Constraints:
         ///   - Use foreach + if + List.Add; no LINQ.
+        /// Links:
+        ///   Filtering example: https://github.com/xamk-ture/FundamentalsExamples/blob/master/IfExample/Program.cs
         /// ============================================================================
         /// </summary>
         public static List<int> FindAboveThreshold(List<int> numbers, int threshold)
         {
             // TODO:
-            // var result = new List<int>();
-            // foreach (var n in numbers) if (n > threshold) result.Add(n);
-            // return result;
             throw new NotImplementedException("Build a new list containing items > threshold.");
         }
 
@@ -103,13 +101,13 @@ namespace CollectionsAndLoops_25
         /// Goal:
         ///   - Try to remove 'number' using List.Remove.
         ///   - Print feedback.
+        /// Links:
+        ///   List.Remove example: https://github.com/xamk-ture/FundamentalsExamples/blob/master/ListExample/Program.cs
         /// ============================================================================
         /// </summary>
         public static void RemoveNumberFromList(List<int> numbers, int number)
         {
             // TODO:
-            // bool removed = numbers.Remove(number);
-            // Console.WriteLine(removed ? $"Removed {number}" : $"Not found: {number}");
         }
 
         /// <summary>
@@ -119,14 +117,13 @@ namespace CollectionsAndLoops_25
         ///   - Append 'count' random integers in the range [min, max] to 'list'.
         /// Notes:
         ///   - If count <= 0, do nothing.
+        /// Links:
+        ///   Random usage: https://github.com/xamk-ture/FundamentalsExamples/blob/master/RandomExample/Program.cs
         /// ============================================================================
         /// </summary>
         public static void AddRandomNumbers(List<int> list, int count, int min, int max)
         {
             // TODO:
-            // if (count <= 0) return;
-            // var rnd = new Random();
-            // for (int i = 0; i < count; i++) list.Add(rnd.Next(min, max + 1));
         }
 
         // -----------------------------------------------------------------
@@ -140,23 +137,13 @@ namespace CollectionsAndLoops_25
         ///   - Read 'count' pairs from console: name (string), age (int).
         ///   - Store into Dictionary&lt;string,int&gt; with unique names (keys).
         ///   - If a name already exists, re-prompt for a different name.
+        /// Links:
+        ///   Dictionary basics: https://github.com/xamk-ture/FundamentalsExamples/blob/master/DictionaryExample/Program.cs
         /// ============================================================================
         /// </summary>
         public static Dictionary<string, int> CollectDataToDictionary(int count)
         {
             // TODO:
-            // var dict = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
-            // int added = 0;
-            // while (added < count) {
-            //   Console.Write("Name: ");
-            //   string name = (Console.ReadLine() ?? "").Trim();
-            //   if (string.IsNullOrEmpty(name)) { Console.WriteLine("Name cannot be empty."); continue; }
-            //   if (dict.ContainsKey(name)) { Console.WriteLine("Name exists, enter a different one."); continue; }
-            //   int age = ReadInt("Age: ");
-            //   dict.Add(name, age);
-            //   added++;
-            // }
-            // return dict;
             throw new NotImplementedException("Fill a Dictionary<string,int> with unique (name, score) pairs.");
         }
 
@@ -166,13 +153,13 @@ namespace CollectionsAndLoops_25
         /// Goal:
         ///   - Print each entry as: "Key:{name} Value:{age}" (one per line).
         ///   - If dictionary is empty, print "(Empty)".
+        /// Links:
+        ///   Dictionary foreach example: https://github.com/xamk-ture/FundamentalsExamples/blob/master/DictionaryExample/Program.cs
         /// ============================================================================
         /// </summary>
         public static void PrintDictionary(Dictionary<string, int> dict)
         {
             // TODO:
-            // if (dict == null || dict.Count == 0) { Console.WriteLine("(Empty)"); return; }
-            // foreach (var kv in dict) Console.WriteLine($"Key:{kv.Key} Value:{kv.Value}");
         }
 
         /// <summary>
@@ -180,13 +167,14 @@ namespace CollectionsAndLoops_25
         /// Assignment 8: Find value by key
         /// Goal:
         ///   - Print the score if found, else "Not found: {key}".
+        /// Links:
+        ///   Dictionary lookup example: https://github.com/xamk-ture/FundamentalsExamples/blob/master/DictionaryExample/Program.cs
         /// ============================================================================
         /// </summary>
         public static void FindValueByKey(Dictionary<string, int> dict, string key)
         {
             // TODO:
-            // if (dict.TryGetValue(key, out int value)) Console.WriteLine($"{key} has score {value}");
-            // else Console.WriteLine($"Not found: {key}");
+           
         }
 
         /// <summary>
@@ -194,13 +182,13 @@ namespace CollectionsAndLoops_25
         /// Assignment 9: Remove key from dictionary
         /// Goal:
         ///   - Remove the entry with 'key' and print feedback.
+        /// Links:
+        ///   Dictionary.Remove example: https://github.com/xamk-ture/FundamentalsExamples/blob/master/DictionaryExample/Program.cs
         /// ============================================================================
         /// </summary>
         public static void RemoveKeyFromDictionary(Dictionary<string, int> dict, string key)
         {
             // TODO:
-            // bool removed = dict.Remove(key);
-            // Console.WriteLine(removed ? $"Removed {key}" : $"Not found: {key}");
         }
 
         /*
@@ -218,9 +206,6 @@ namespace CollectionsAndLoops_25
         public static int[] CollectNumbersToArray(int count)
         {
             // TODO:
-            // var arr = new int[count];
-            // for (int i = 0; i < count; i++) arr[i] = ReadInt($"Index {i}: ");
-            // return arr;
             throw new NotImplementedException("Create an int[] of size 'count' and fill it using a for-loop and ReadInt.");
         }
 
@@ -230,12 +215,13 @@ namespace CollectionsAndLoops_25
          Goal:
            - Print each element of the given int[] on its own line.
            - Use foreach or for-loop to iterate.
+         Links:
+           Array print example: https://github.com/xamk-ture/FundamentalsExamples/blob/master/ArrayExample/Program.cs
          ============================================================================
         */
         public static void PrintArray(int[] numbers)
         {
             // TODO:
-            // foreach (var n in numbers) Console.WriteLine(n);
             throw new NotImplementedException("Loop through the array and print each number on its own line.");
         }
 
