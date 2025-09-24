@@ -25,6 +25,7 @@ namespace CollectionsAndLoops_25
         */
         public static List<int> CollectNumbersToList(int count)
         {
+            //Remove the exception and implement the function
             throw new NotImplementedException("Implement collecting integers to a List<int> using the linked examples.");
         }
 
@@ -41,6 +42,10 @@ namespace CollectionsAndLoops_25
         public static void PrintList(IEnumerable<int> numbers)
         {
             // TODO:
+
+            //Remove the exception and implement the function
+            throw new NotImplementedException("Implement printing numbers.");
+
         }
 
         /// <summary>
@@ -58,6 +63,7 @@ namespace CollectionsAndLoops_25
         public static double CalculateAverage(List<int> numbers)
         {
             // TODO:
+            //Remove the exception and implement the function
             throw new NotImplementedException("Sum with for-loop and divide by Count; handle empty list.");
         }
 
@@ -75,6 +81,7 @@ namespace CollectionsAndLoops_25
         public static void FindMinAndMax(List<int> numbers, out int min, out int max)
         {
             // TODO:
+            //Remove the exception and implement the function
             throw new NotImplementedException("Walk the list once and track current min and max.");
         }
 
@@ -92,6 +99,7 @@ namespace CollectionsAndLoops_25
         public static List<int> FindAboveThreshold(List<int> numbers, int threshold)
         {
             // TODO:
+            //Remove the exception and implement the function
             throw new NotImplementedException("Build a new list containing items > threshold.");
         }
 
@@ -144,6 +152,7 @@ namespace CollectionsAndLoops_25
         public static Dictionary<string, int> CollectDataToDictionary(int count)
         {
             // TODO:
+            //Remove the exception and implement the function
             throw new NotImplementedException("Fill a Dictionary<string,int> with unique (name, score) pairs.");
         }
 
@@ -206,6 +215,8 @@ namespace CollectionsAndLoops_25
         public static int[] CollectNumbersToArray(int count)
         {
             // TODO:
+            //Remove the exception and implement the function
+
             throw new NotImplementedException("Create an int[] of size 'count' and fill it using a for-loop and ReadInt.");
         }
 
@@ -222,6 +233,7 @@ namespace CollectionsAndLoops_25
         public static void PrintArray(int[] numbers)
         {
             // TODO:
+            //Remove the exception and implement the function
             throw new NotImplementedException("Loop through the array and print each number on its own line.");
         }
 
