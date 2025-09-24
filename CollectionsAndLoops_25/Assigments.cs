@@ -38,6 +38,7 @@ namespace CollectionsAndLoops_25
                 // \n tarkoittaa uutta tyhjää riviä. Tämä siksi, että numero syötetään tyhjälle riville
                 // joka on selkeämpi loppukäyttäjälle
                 int number = ReadInt("Syötä numero \n");
+                numbers.Add(number);
             }
 
             return numbers;
@@ -59,7 +60,6 @@ namespace CollectionsAndLoops_25
         public static void PrintList(IEnumerable<int> numbers)
         {
             // TODO: Poista poikkeus ja tulosta jokainen alkio omalle rivilleen.
-
             throw new NotImplementedException("Käytä foreachia ja tulosta jokainen luku.");
         }
 
